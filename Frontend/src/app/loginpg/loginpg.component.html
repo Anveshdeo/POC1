@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand px-2">
+  <div class="logo-container">
+    <div class="logo-holder">
+      <a href="#">
+        <h3 class="badge badge-primary text-wrap" style="width:8rem">Company Logo</h3>
+      </a>
+    </div>
+  </div>
+</nav>
+<br>
+<hr>
+<h4>Client Login</h4>
+
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="email" class="form-control" id="username" formControlName="username" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" formControlName="password">
+  </div>
+  <div class="submit">
+
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a routerLink="/signup">Register</a>
+  </div>
+</form>

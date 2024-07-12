@@ -1,0 +1,15 @@
+.table td {
+  text-align: center;
+  } 
+
+  .table th {
+    text-align: center;
+    color: #fff;
+    } 
+
+    .bb{
+      background-color: green;
+    }
+    .dd{
+      background-color: red;
+    }
